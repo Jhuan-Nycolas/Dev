@@ -11,6 +11,8 @@
   in {
     devShells.${system}.default = pkgs.mkShell {
       packages = [ pkgs.yarn ];
+
+      shellHook = "exec fish";
     };
   };
 }
