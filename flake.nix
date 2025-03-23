@@ -11,12 +11,28 @@
     pkgs = import nixpkgs { inherit system; };
   in {
     devShells.${system} = {
-      spacedev = pkgs.mkShell {
+      flutter = pkgs.mkShell {
         packages = [
           pkgs.flutter
         ];
    
-        shellHook = "clear; exec fish";
+        shellHook = "clear; ${pkgs.figlet}/bin/figlet Flutter DevShell Activated; exec fish";
+      };
+
+      yarn = pkgs.mkShell {
+        packages = [
+          pkgs.yarn
+        ];
+   
+        shellHook = "clear; ${pkgs.figlet}/bin/figlet Yarn DevShell Activated; exec fish";
+      };
+
+      cpp = pkgs.mkShell {
+        packages = [
+          pkgs.gcc
+        ];
+
+        shellHook = "clear; ${pkgs.figlet}/bin/figlet Cpp DevShell Activated; exec fish";
       };
     };
   };
