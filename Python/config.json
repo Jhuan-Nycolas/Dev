@@ -1,0 +1,3 @@
+{
+  "editor": "nix run nixpkgs#github:Jhuan-Nycolas/Nvim"
+}
