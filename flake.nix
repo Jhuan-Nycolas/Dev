@@ -34,6 +34,15 @@
 
         shellHook = "clear; ${pkgs.figlet}/bin/figlet Cpp DevShell Activated; exec fish";
       };
+
+      rust = pkgs.mkShell {
+        packages = [
+          pkgs.rust
+          pkgs.cargo
+        ];
+
+        shellHook = "clear; ${pkgs.figlet}/bin/figlet Rust DevShell Activated; exec fish";
+      };
     };
   };
 }
