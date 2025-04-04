@@ -37,7 +37,7 @@
 
       rust = pkgs.mkShell {
         packages = [
-          pkgs.rust
+          pkgs.rustc
           pkgs.cargo
         ];
 
