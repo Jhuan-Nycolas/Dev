@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 body {
   background-color: #2e2e2e;
@@ -36,9 +36,11 @@ p::before {
   top: 21px;
   left: 51%;
   transform: translateX(-50%);
-  transition: width 0.5s ease, left 0.5s ease;
+  transition:
+    width 0.5s ease,
+    left 0.5s ease;
 }
 
 p:hover::before {
-  width: 60px;
+  width: 160%;
 }
