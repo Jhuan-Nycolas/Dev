@@ -8,14 +8,14 @@
   outputs = {nixpkgs, ...}: let
     system = "x86_64-linux";
 
-    pkgs = import nixpkgs { inherit system; };
+    pkgs = import nixpkgs {inherit system;};
   in {
     devShells.${system} = {
       flutter = pkgs.mkShell {
         packages = [
           pkgs.flutter
         ];
-   
+
         shellHook = "clear; ${pkgs.figlet}/bin/figlet Flutter DevShell Activated; exec fish";
       };
 
@@ -23,7 +23,7 @@
         packages = [
           pkgs.yarn
         ];
-   
+
         shellHook = "clear; ${pkgs.figlet}/bin/figlet Yarn DevShell Activated; exec fish";
       };
 
@@ -35,13 +35,12 @@
         shellHook = "clear; ${pkgs.figlet}/bin/figlet Cpp DevShell Activated; exec fish";
       };
 
-      rust = pkgs.mkShell {
+      python = pkgs.mkShell {
         packages = [
-          pkgs.rustc
-          pkgs.cargo
+          pkgs.python313
         ];
 
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Rust DevShell Activated; exec fish";
+        shellHook = "clear; ${pkgs.figlet}/bin/figlet Python DevShell Activated; exec fish";
       };
     };
   };
