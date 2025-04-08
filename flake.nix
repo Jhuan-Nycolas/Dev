@@ -16,7 +16,7 @@
           pkgs.flutter
         ];
 
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Flutter DevShell Activated; exec fish";
+        shellHook = "clear";
       };
 
       yarn = pkgs.mkShell {
@@ -24,7 +24,7 @@
           pkgs.yarn
         ];
 
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Yarn DevShell Activated; exec fish";
+        shellHook = "clear";
       };
 
       cpp = pkgs.mkShell {
@@ -32,7 +32,7 @@
           pkgs.gcc
         ];
 
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Cpp DevShell Activated; exec fish";
+        shellHook = "clear";
       };
 
       python = pkgs.mkShell {
@@ -40,7 +40,7 @@
           pkgs.python313
         ];
 
-        shellHook = "clear; ${pkgs.figlet}/bin/figlet Python DevShell Activated; exec fish";
+        shellHook = "clear";
       };
     };
   };
