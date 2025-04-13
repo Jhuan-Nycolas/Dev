@@ -11,14 +11,6 @@
     pkgs = import nixpkgs {inherit system;};
   in {
     devShells.${system} = {
-      flutter = pkgs.mkShell {
-        packages = [
-          pkgs.flutter
-        ];
-
-        shellHook = "clear";
-      };
-
       yarn = pkgs.mkShell {
         packages = [
           pkgs.yarn
