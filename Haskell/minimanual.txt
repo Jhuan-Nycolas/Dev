@@ -1,0 +1,13 @@
+-- Tipos --
+
+Int -- Inteiro
+Bool -- Booleano: True, False
+String -- Caracteres em ""
+Char -- Caracteres em ''
+Float -- Números de ponto flutuante
+Double -- Números de ponto flutuante mas com mais espaço reservado
+
+-- Operadores --
+\|| -- Or
+&& -- And
+not -- Not

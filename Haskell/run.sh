@@ -1,1 +1,1 @@
-clear; make >> /dev/null; ./program
+clear; runghc program.hs
