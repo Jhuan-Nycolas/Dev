@@ -1,17 +1,11 @@
-nums :: [Int]
-nums = [1, 2, 3, 4, 5]
+import Foreach
 
-fruits :: [String]
-fruits = ["Maça", "Abacate", "Tomate", "Kiwi", "Uva"]
+list :: [String]
+list = ["S1", "S2ç", "S3"]
 
-duble :: [Int] -> [Int]
-duble = map (* 2)
-
-numsdubled = duble nums
-
-foreach :: [any] -> any
-foreach = map (const putStrLn . show)
+list2 :: [Int]
+list2 = [1, 2, 3, 4]
 
 main :: IO ()
 main = do
-  foreach numsdubled
+  foreach list2 "String"
