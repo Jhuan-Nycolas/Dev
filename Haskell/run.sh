@@ -1,0 +1,1 @@
+clear; runghc main.hs
