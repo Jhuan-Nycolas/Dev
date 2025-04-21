@@ -1,0 +1,9 @@
+@import url("./fonts.css");
+@import url("./colors.css");
+
+body {
+  background-color: var(--warm-beige);
+  color: var(--soft-black);
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
